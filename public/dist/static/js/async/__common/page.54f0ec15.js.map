@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/async/__common/page.54f0ec15.js","sources":["webpack://modukit_fe/./src/routes/__common/page.tsx"],"sourcesContent":["function Index() {\n  return <div>hello</div>;\n}\n\nexport default Index;\n"],"names":[],"mappings":"qIAIA,WAJA,WACE,MAAO,UAAC,O,SAAI,O,EACd,C"}

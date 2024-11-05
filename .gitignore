@@ -1,0 +1,5 @@
+dist/
+!public/dist
+node_modules/
+logs/
+.DS_Store

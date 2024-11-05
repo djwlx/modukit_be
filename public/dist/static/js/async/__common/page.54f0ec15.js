@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmodukit_fe=self.webpackChunkmodukit_fe||[]).push([["218"],{57303:function(e,u,n){n.r(u);var t=n(52676);u.default=function(){return(0,t.jsx)("div",{children:"hello"})}}}]);

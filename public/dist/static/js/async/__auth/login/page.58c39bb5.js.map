@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/async/__auth/login/page.58c39bb5.js","sources":["webpack://modukit_fe/./src/routes/__auth/login/page.tsx"],"sourcesContent":["function Login() {\n  return <div>login</div>;\n}\nexport default Login;\n"],"names":[],"mappings":"qIAGA,WAHA,WACE,MAAO,UAAC,O,SAAI,O,EACd,C"}

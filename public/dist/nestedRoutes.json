@@ -1,0 +1,1 @@
+{"main":[{"path":"/","children":[{"_component":"@_modern_js_src/routes/__auth/login/page","id":"__auth/login/page","type":"nested","path":"/login"},{"_component":"@_modern_js_src/routes/__common/page","index":true,"id":"__common/page","type":"nested"}],"isRoot":true,"_component":"@_modern_js_src/routes/layout","id":"layout","type":"nested"}]}

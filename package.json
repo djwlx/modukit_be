@@ -1,0 +1,52 @@
+{
+  "name": "modukit_be",
+  "version": "0.0.1",
+  "description": "modukit_be",
+  "main": "app/app.ts",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "start": "tsc && cross-env NODE_ENV=production node dist/app/app.js",
+    "build": "tsc"
+  },
+  "keywords": [
+    "koa",
+    "sequelize",
+    "log4js",
+    "jsonwebtoken"
+  ],
+  "author": "djwl",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "axios": "^1.6.8",
+    "fs-extra": "^11.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "koa": "^2.14.1",
+    "koa-body": "^6.0.1",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.7.1",
+    "mime-types": "^2.1.35",
+    "path-to-regexp": "^6.2.1",
+    "sequelize": "^6.29.0",
+    "sqlite3": "^5.1.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/koa": "^2.15.0",
+    "@types/koa-mount": "^4.0.5",
+    "@types/koa-router": "^7.4.8",
+    "@types/koa-static": "^4.0.4",
+    "@types/koa__cors": "^5.0.0",
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^22.9.0",
+    "@types/uuid": "^9.0.8",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
