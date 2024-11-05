@@ -9,8 +9,20 @@ const user = sequelize.define('User', {
   password: {
     type: DataTypes.STRING,
   },
+  nickname: {
+    type: DataTypes.STRING,
+  },
+  avatar: {
+    type: DataTypes.STRING,
+  },
+  email: {
+    type: DataTypes.STRING,
+  },
+  status: {
+    type: DataTypes.STRING,
+  },
 });
 
-// user.sync({ force: true });
+// user.sync({ alter: true });
 
 export default user;
