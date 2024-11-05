@@ -8,7 +8,16 @@ class UserController {
     if (!param.username || !param.password) {
       resError(ctx, 400, '用户名或密码不能为空');
     } else {
-      const findOne: any = await UserService.query(param);
+      const hasUser = await UserService.hasUser(param.username);
+      if (!hasUser) {
+        resError(ctx, 400, '用户不存在');
+        return;
+      }
+      const findOne: any = await UserService.query({
+        username: param.username,
+        password: param.password,
+      });
+
       if (findOne) {
         const token = jwt.setToken({ id: findOne.id });
         resSuccess(ctx, { token }, '登录成功');
@@ -32,6 +41,10 @@ class UserController {
         resSuccess(ctx, {}, '注册成功');
       }
     }
+  };
+  // 信息
+  static info: MyMiddleware = async (ctx, next) => {
+    resSuccess(ctx, '1', '获取成功');
   };
 }
 
