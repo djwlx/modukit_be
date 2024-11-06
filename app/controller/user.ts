@@ -46,6 +46,16 @@ class UserController {
   static info: MyMiddleware = async (ctx, next) => {
     resSuccess(ctx, ctx.state.userInfo);
   };
+  // 修改信息
+  static update: MyMiddleware = async (ctx, next) => {
+    const param = ctx.request.body;
+    const result = await UserService.updateById(1, {
+      nickname: '低级亡灵',
+    });
+    console.log(result, 'ppppp');
+    resSuccess(ctx, result);
+    // const findOne = await UserService.query({ id: ctx.state.userInfo.id });
+  };
 }
 
 export default UserController;

@@ -10,6 +10,10 @@ class UserService {
     return Boolean(findOne);
   };
 
+  static updateById = async (id: number, param: any) => {
+    return userModel.update(param, { where: { id } });
+  };
+
   static query = (param: any) => {
     return userModel.findOne({ where: param });
   };

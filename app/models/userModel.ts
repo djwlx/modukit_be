@@ -14,6 +14,7 @@ const user = sequelize.define('User', {
   },
   avatar: {
     type: DataTypes.STRING,
+    defaultValue: 'https://img.djwl.top/icon/-3d5176eed3e011db.jpg',
   },
   email: {
     type: DataTypes.STRING,
@@ -23,6 +24,6 @@ const user = sequelize.define('User', {
   },
 });
 
-// user.sync({ alter: true });
+user.sync({ alter: true });
 
 export default user;
