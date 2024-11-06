@@ -5,7 +5,6 @@ import { koaBody } from 'koa-body';
 import logMark from './middleware/log';
 import authenticate from './middleware/authenticate';
 import config from '../config';
-import getGlobalInfo from './middleware/global-info';
 import staticMiddleware from './middleware/static';
 import initApp from './utils/dependencies';
 
@@ -20,16 +19,8 @@ app.use(koaBody({ multipart: true }));
 app.use(logMark());
 //静态文件
 app.use(staticMiddleware());
-
-// 路由鉴权
-// app.use(
-//   authenticate({
-//     notInclude: ['/api/user/register', '/api/user/login', '/api/util/:any', '/api/util', '/api/file/:any'],
-//   })
-// );
-
-// 全局信息
-app.use(getGlobalInfo());
+// 鉴权
+app.use(authenticate());
 // 路由
 app.use(router.routes());
 

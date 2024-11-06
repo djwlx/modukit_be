@@ -3,7 +3,13 @@ import { Context } from 'koa';
 interface MyContext extends Context {
   state: {
     userInfo?: {
-      id: string;
+      id: number;
+      username: string;
+      password?: string;
+      nickname?: string;
+      avatar?: string;
+      email?: string;
+      status?: string;
     };
   };
 }

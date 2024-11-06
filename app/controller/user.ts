@@ -44,7 +44,7 @@ class UserController {
   };
   // 信息
   static info: MyMiddleware = async (ctx, next) => {
-    resSuccess(ctx, '1', '获取成功');
+    resSuccess(ctx, ctx.state.userInfo);
   };
 }
 

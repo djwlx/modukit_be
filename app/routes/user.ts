@@ -8,6 +8,6 @@ const router = new Router({
 router
   .post('/login', UserController.login)
   .post('/register', UserController.register)
-  .post('/info', UserController.info);
+  .get('/info', UserController.info);
 
 export default router;
